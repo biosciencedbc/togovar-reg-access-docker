@@ -16,10 +16,10 @@ services:
         max-size: "1m"
         max-file: "1"
     depends_on:
-      - sparqlist
-      - virtuoso
+      - sparqlist_reg_access
+      - virtuoso_reg_access
 
-  sparqlist:
+  sparqlist_reg_access:
     build:
       context: docker/sparqlist
       dockerfile: Dockerfile
@@ -32,7 +32,7 @@ services:
         max-size: "1m"
         max-file: "1"
 
-  virtuoso:
+  virtuoso_reg_access:
     image: openlink/virtuoso-opensource-7:7.2
     env_file: togovar-dev.env
     volumes:
