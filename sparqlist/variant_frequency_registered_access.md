@@ -1,4 +1,4 @@
-# Variant report / Frequency
+# Variant report / Frequency (Access only registered users)
 
 ## Parameters
 
