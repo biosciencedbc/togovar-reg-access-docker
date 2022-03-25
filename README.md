@@ -6,7 +6,7 @@
 
 ```
 $ cat .env
-
+# Docker compose settings
 VERSION=2020.07
 
 NGINX_PORT=
@@ -19,7 +19,7 @@ VIRTUOSO_VOLUMES_DATA=
 
 ```
 $ cat togovar-dev.env
-
+# SPARQList settings
 # SPARQList
 ADMIN_PASSWORD=
 NODE_OPTIONS=--max-old-space-size=16384
@@ -71,6 +71,5 @@ VIRT_Parameters_MaxDirtyBuffers=2000000
 ```
 $ docker-compose build
 $ docker-compose up -d
-
 ```
 
