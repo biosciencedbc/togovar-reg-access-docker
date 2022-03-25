@@ -1,5 +1,12 @@
+# TogoVar registered access docker
 
+## Configration
+
+### .env example
+
+```
 $ cat .env
+
 VERSION=2020.07
 
 NGINX_PORT=
@@ -7,8 +14,10 @@ PUBLIC_DIR=
 
 VIRTUOSO_VOLUMES_LOAD=
 VIRTUOSO_VOLUMES_DATA=
+```
+### togovar-dev.env example
 
-
+```
 $ cat togovar-dev.env
 
 # SPARQList
@@ -55,4 +64,13 @@ VIRT_Parameters_MaxDirtyBuffers=2000000
 ## Uncomment next two lines if there is 64 GB system memory free
 #VIRT_Parameters_NumberOfBuffers=5450000
 #VIRT_Parameters_MaxDirtyBuffers=4000000
+```
+
+## Run application
+
+```
+$ docker-compose build
+$ docker-compose up -d
+
+```
 
